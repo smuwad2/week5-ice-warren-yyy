@@ -27,8 +27,7 @@
                     params: {
                         'query': document.getElementById("nameInput").value
                     }
-                }
-                ).then(response => {
+                }).then(response => {
                     const suggestions = response.data;
                     document.getElementById("suggestions").innerText = suggestions;
                 }).catch(error => {
